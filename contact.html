@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Anthony LORETTE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="bannercontact" id="sec">
+            <header>
+              <a href="#" class="logo">A.L</a>
+              <div id="toggle" onclick="toggle()"></div>
+            </header>
+            <div class="contentcontact">
+              <section class="contact-wrap">
+                <form action="https://formsubmit.co/lorette.anthony.jrd@gmail.com" method="POST" class="contact-form">
+                  <div class="col-sm-6">
+                    <div class="input-block">
+                      <label for="">Prénom</label>
+                      <input type="text" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="input-block">
+                      <label for="">Nom</label>
+                      <input type="text" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="input-block">
+                      <label for="">Email</label>
+                      <input type="email" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="input-block">
+                      <label for="">Sujet</label>
+                      <input type="text" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="input-block textarea">
+                      <label for="">Laissez votre message ici</label>
+                      <textarea rows="3" type="text" class="form-control" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <button type="submit" class="square-button">Envoyez</button>
+                  </div>
+                </form>
+              </section>
+            </div>
+            <ul class="sci">
+              <li><a href="https://www.facebook.com/AnthonyDevAcc"><img src="img/facebook.png"></img></a></li>
+              <li><a href="https://twitter.com/Anthony_Dev93"><img src="img/twitter.png"></img></a></li>
+              <li><a href="https://www.linkedin.com/in/anthony-lorette/"><img src="img/linkedin.png"></img></a></li>
+            </ul>
+          </section>
+          <div id="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contactez-moi</a></li>
+            </ul>
+          </div>
+          <script type="text/javascript">
+            function toggle(){
+              var sec = document.getElementById('sec')
+              var nav = document.getElementById('navigation')
+              sec.classList.toggle('active')
+              nav.classList.toggle('active')
+            }
+          </script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./contact.js"></script>
+    </body>
+</html>
