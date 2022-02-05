@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Anthony LORETTE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="bannerabout" id="sec">
+            <header>
+              <a href="index.html" class="logo">A.L</a>
+              <div id="toggle" onclick="toggle()"></div>
+            </header>
+            <div class="contentabout">
+              <h2>Le mail a été envoyez, je vous remercie !</h2>
+              <br><a class="back" href="index.html">Revenir a l'accueil</a>
+            </div>
+            <ul class="sci">
+              <li><a href="https://www.facebook.com/AnthonyDevAcc"><img src="img/facebook.png"></img></a></li>
+              <li><a href="https://twitter.com/Anthony_Dev93"><img src="img/twitter.png"></img></a></li>
+              <li><a href="https://www.linkedin.com/in/anthony-lorette/"><img src="img/linkedin.png"></img></a></li>
+            </ul>
+          </section>
+          <div id="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contactez-moi</a></li>
+            </ul>
+          </div>
+          <script type="text/javascript">
+            function toggle(){
+              var sec = document.getElementById('sec')
+              var nav = document.getElementById('navigation')
+              sec.classList.toggle('active')
+              nav.classList.toggle('active')
+            }
+          </script>
+    </body>
+</html>
