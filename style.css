@@ -75,8 +75,10 @@ header #toggle:after
   padding:100px;
   /*background:url(img/bg.jpg);
   background-size:cover;*/
+  background-color: #101820FF;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: 0.5s;
   z-index: 2;
 }
@@ -118,7 +120,7 @@ transform: translate(-400px);
 }
 .content
 {
-  max-width: 600px;
+  max-width: 900px;
   z-index: 2;
   
 }
@@ -186,6 +188,124 @@ background: #fff;
 }
 
 /*about.html */
+.texte
+{
+  width: 70%;
+float:left;
+}
+
+.box
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+width: 300px;
+height: 300px;
+background: #060c21;
+float:right;
+}
+
+.box:hover
+{
+  height: 400px;
+}
+
+.box .imgBx
+{
+  padding:10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box .imgBx img
+{
+  max-width: 100%;
+  transition: 0.5s;
+}
+
+.box:hover .imgBx img
+{
+  max-width: 100%;
+  transition: 0.5s;
+}
+
+.box:before
+{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom:-2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.box::after
+{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index:-2;
+  filter:blur(40px);
+}
+
+.box::before,
+.box::after
+{
+  background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+}
+
+.box .content
+{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.box:hover .content
+{
+opacity: 1;
+transition: 0.5s;
+}
+
+.box .content h2
+{
+  font-size: 20px;
+  color:#fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.box .content h2 span
+{
+  font-size: 14px;
+  color:#fff;
+  font-weight: 200; 
+  letter-spacing: 2px;
+}
+
 .bannerabout video{
   position: absolute;
   top:0;
@@ -307,7 +427,7 @@ transform: translate(-400px);
 }
 .contentabout
 {
-  max-width: 900px;
+  max-width: 80%;
   z-index: 2;
 }
 
